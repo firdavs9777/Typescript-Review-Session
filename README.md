@@ -42,3 +42,51 @@ typescript_review/
 ├── tsconfig.json
 ├── README.md
 └── package.json
+
+
+
+```
+# JavaScript & TypeScript Array Methods: `map()`, `filter()`, `find()`, `reduce()`
+
+## Key Differences:
+- **`.map()`**: Transforms every element in the array to a new value.
+- **`.filter()`**: Filters the array to include only elements that satisfy the condition.
+- **`.find()`**: Finds the first element that satisfies the condition.
+- **`.reduce()`**: Reduces the array to a single value, typically used for aggregating or summarizing data.
+
+---
+
+## 1. `.map()`
+Transforms each element in an array and returns a new array.
+
+### Example 1: Doubling Numbers
+```typescript
+let numbers: number[] = [1, 2, 3, 4, 5];
+let doubled = numbers.map(n => n * 2);
+console.log(doubled); // Output: [2, 4, 6, 8, 10]
+```
+## 2. `.filter()`
+```typescript
+
+let numbers: number[] = [1, 2, 3, 4, 5, 6];
+let evenNumbers = numbers.filter(n => n % 2 === 0);
+console.log(evenNumbers); // Output: [2, 4, 6]
+```
+## 3. `.find()`
+```typescript 
+
+let users = [
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+  { id: 3, name: "Charlie" }
+];
+let user = users.find(user => user.name === "Bob");
+console.log(user); // Output: { id: 2, name: "Bob" }
+
+```
+### Sum of Numbers -  `.reduce()`
+
+```typescript 
+let numbers: number[] = [1, 2, 3, 4, 5];
+let sum = numbers.reduce((acc, current) => acc + current, 0);
+console.log(sum); // Output: 15
