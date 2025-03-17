@@ -27,6 +27,9 @@ To get started, clone this repository to your local machine:
 
 ```bash
 git clone https://github.com/firdavs9777/Typescript-Review-Session.git
+
+1. tsc basics.ts 
+2. node basics.ts
 ```
 
 ```bash
